@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buscador de clima de ciudades</title>
+    <link rel="stylesheet" href="../src/style.css/style.css" />
+  </head>
+  <body>
+    <main class="main">
+      <h1>Busca el Clima</h1>
+      <div id="resultado" class="contenedor-texto">
+        <p>Agrega tu ciudad y país, el resultado se mostrará aquí</p>
+      </div>
+      <form id="formulario" class="contenedor-form" action="#" method="POST">
+        <div class="contenedor-input">
+          <input
+            type="text"
+            name="ciudad"
+            id="ciudad"
+            placeholder="Escribe tu Ciudad"
+            class=""
+          />
+        </div>
+        <div class="contenedor-seleccion">
+          <select class="seleccion" id="pais">
+            <option disabled selected value="">-- Seleccione --</option>
+            <option value="AR">Argentina</option>
+            <option value="CO">Colombia</option>
+            <option value="CR">Costa Rica</option>
+            <option value="ES">España</option>
+            <option value="US">Estados Unidos</option>
+            <option value="MX">México</option>
+            <option value="PE">Perú</option>
+          </select>
+        </div>
+
+        <input type="submit" class="btnObtener" value="Obtener Clima" />
+      </form>
+    </main>
+    <script src="../src/index.js"></script>
+  </body>
+</html>
